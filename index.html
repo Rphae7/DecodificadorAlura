@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Decodificador de Texto</title>
+  </head>
+  <body>
+    
+    <nav class="m-0">
+      <img src="imagens/Logo.png" alt="logo Alura">
+    </nav>
+    <section>
+
+      <div class="row">
+        <div class="col-sm-1 col-7 m-3">
+          <textarea name="text" id="text" cols="30" rows="10" class="text-area" placeholder="Digite seu texto " autofocus></textarea>
+          <p class="m-1" id="error">
+            <img src="imagens/Exclamacao.png" alt="Exclamacao"> 
+            Apenas letras minúsculas e sem acento.
+          </p>
+          <div class="row m-1">
+            <div class="col-5 col-sm-2 m-1">
+              <button class="btn btn-primary p-1" onclick="criptografar()">Criptografar</button>
+            </div>
+            <div class="col-5 col-sm-2 m-1 ">
+              <button class="btn btn-info p-1" onclick="descriptografar()">Descriptografar</button>
+            </div>
+          </div>  
+        </div>
+
+        <div class="col-sm-2 col-4 m-1 card card2">
+          
+          <img src="imagens/Boneca.png" alt="Boneca com uma lupa" class="image imagem" id="imagem">
+          
+          <section class="row left m-4" id="resultado">
+            <h1 class="center">Nenhuma mensagem encontrada</h1>
+            <p class="center">Digite um texto que você deseja criptografar ou descriptografar.</p>
+          </section>
+          
+          <div class="col-12">
+            <button class="btn-info p-1 copiar" id="copiar" hidden>Copiar</button>
+          </div>
+        
+        </div>
+
+      </div>
+     
+    </section>
+    <!-- archivos javascript -->
+    <script src="Js/functions.js"></script>
+</body>
+</html>
